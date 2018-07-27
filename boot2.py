@@ -132,7 +132,6 @@ def is_not_empty(s):  # if string is empty or not
 def end_zero(mihex):
     x = len(mihex)
     if x % 2 == 0:
-        print "evet"
         return True
 
 if __name__ == '__main__':
