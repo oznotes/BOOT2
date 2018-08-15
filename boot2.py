@@ -5,10 +5,6 @@ import os
 __author__ = "Oz"
 __copyright__ = "Apple BOOT2 Parser"
 
-"""
-
-
-"""
 
 model_list = \
     {
@@ -129,10 +125,12 @@ def is_not_empty(s):  # if string is empty or not
     """
     return bool(s and s.strip())
 
+
 def end_zero(mihex):
     x = len(mihex)
     if x % 2 == 0:
         return True
+
 
 if __name__ == '__main__':
 
@@ -153,12 +151,15 @@ if __name__ == '__main__':
                 f.write(my_hex)
                 f.close()           
                 """
+
+                # TODO : check wifi - bt compatibility .
+
                 wifi = searching(search["wifi"], my_hex)
                 if len(wifi) < 12:
                     wifi = wifi.ljust(12, "0")
                 else:
                     pass
-                wifi = ":".join([wifi[i:i + 2] for i in range(0, len(wifi), 2)])
+                wifi = ":".join([wifi[i:i + 2] for i in range(0, len(wifi), 2)])  # format AA:BB:CC:DD:EE:FF
                 bluetooth = searching(search["bt"], my_hex)
                 if len(bluetooth) < 12:
                     bluetooth = bluetooth.ljust(12, "0")
