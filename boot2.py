@@ -85,6 +85,7 @@ colors = \
         # Gold Universal
         "00020000b3c5d400e3e4e10000000000": "Gold",
         "00020000b5cce100e3e4e10000000000": "Unknown"
+        # TODO : iPOD Color work.
     }
 
 
@@ -182,6 +183,7 @@ if __name__ == '__main__':
                 print ("MODEL   : " + model + region)
                 print ("DEVICE  : " + model_list[device] + " " + "[ " + device + " ]")
                 print ("COLOR   : " + str(color).upper())
+                # board ID .
             else:
                 print ("Empty ?")
     else:
