@@ -1,6 +1,6 @@
 import binascii
-import sys
 import os
+import sys
 
 __author__ = "Oz"
 __copyright__ = "Apple BOOT2 Parser"
@@ -160,19 +160,22 @@ if __name__ == '__main__':
                     wifi = wifi.ljust(12, "0")
                 else:
                     pass
-                wifi = ":".join([wifi[i:i + 2] for i in range(0, len(wifi), 2)])  # format AA:BB:CC:DD:EE:FF
+                # format AA:BB:CC:DD:EE:FF
+                wifi = ":".join([wifi[i:i + 2]
+                                 for i in range(0, len(wifi), 2)])
                 bluetooth = searching(search["bt"], my_hex)
                 if len(bluetooth) < 12:
                     bluetooth = bluetooth.ljust(12, "0")
                 else:
                     pass
-                bluetooth = ":".join([bluetooth[i:i + 2] for i in range(0, len(bluetooth), 2)])
+                # format AA:BB:CC:DD:EE:FF
+                bluetooth = ":".join([bluetooth[i:i + 2]
+                                      for i in range(0, len(bluetooth), 2)])
                 serial = searching(search["sn"], my_hex)
                 if end_zero(serial) is not True:
                     serial = serial + "0"
                 serial = serial.decode("hex")
                 model = searching(search["model"], my_hex).decode("hex")
-                # model = model.decode("hex")
                 region = searching(search["region"], my_hex).decode("hex")
                 device = searching(search["device"], my_hex).decode("hex")
                 color = color_search(my_hex)
@@ -181,7 +184,8 @@ if __name__ == '__main__':
                 print ("BLT. ID : " + bluetooth.upper())
                 print ("SERIAL  : " + serial)
                 print ("MODEL   : " + model + region)
-                print ("DEVICE  : " + model_list[device] + " " + "[ " + device + " ]")
+                print ("DEVICE  : " +
+                       model_list[device] + " " + "[ " + device + " ]")
                 print ("COLOR   : " + str(color).upper())
                 # board ID .
             else:
