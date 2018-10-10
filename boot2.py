@@ -137,7 +137,7 @@ if __name__ == '__main__':
 
     if os.path.isfile("boot2.bin") is True:
         if os.path.getsize("boot2.bin") > 2105344:
-            print ("File size for boot2.bin should be 2 MBytes")
+            print("File size for boot2.bin should be 2 MBytes")
             sys.exit()
         else:
             f = open("boot2.bin", "rb")
@@ -180,16 +180,16 @@ if __name__ == '__main__':
                 device = searching(search["device"], my_hex).decode("hex")
                 color = color_search(my_hex)
                 # Print out details
-                print ("WIFI ID : " + wifi.upper())
-                print ("BLT. ID : " + bluetooth.upper())
-                print ("SERIAL  : " + serial)
-                print ("MODEL   : " + model + region)
-                print ("DEVICE  : " +
-                       model_list[device] + " " + "[ " + device + " ]")
-                print ("COLOR   : " + str(color).upper())
+                print("WIFI ID : " + wifi.upper())
+                print("BLT. ID : " + bluetooth.upper())
+                print("SERIAL  : " + serial)
+                print("MODEL   : " + model + region)
+                print("DEVICE  : " +
+                      model_list[device] + " " + "[ " + device + " ]")
+                print("COLOR   : " + str(color).upper())
                 # board ID .
             else:
-                print ("Empty ?")
+                print("Empty ?")
     else:
-        print ("File not found")
+        print("File not found")
         sys.exit()
