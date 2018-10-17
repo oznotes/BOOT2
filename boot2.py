@@ -203,8 +203,7 @@ if __name__ == '__main__':
                 print("BLT. ID : " + bluetooth.upper())
                 print("SERIAL  : " + serial)
                 print("MODEL   : " + model + region)
-                print("DEVICE  : " +
-                      model_list[device] + " " + "[ " + device + " ]")
+                print("DEVICE  : " + model_list[device] + " [ " + device + " ]")
                 print("COLOR   : " + str(color).upper())
                 # board ID .
             else:
