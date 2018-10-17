@@ -61,6 +61,23 @@ model_list = \
         "A1601": "iPad Mini 3",
         "A1538": "iPad Mini 4",
         "A1550": "iPad Mini 4",
+        "A1662":"iPhone SE",
+        "A1723":"iPhone SE",
+        "A1724":"iPhone SE",
+        "A1633":"iPhone 6S",
+        "A1688":"iPhone 6S",
+        "A1700":"iPhone 6S",
+        "A1691":"iPhone 6S",
+        "A1634":"iPhone 6SP",
+        "A1687":"iPhone 6SP",
+        "A1699":"iPhone 6SP",
+        "A1690":"iPhone 6SP",
+        "A1660":"iPhone 7",
+        "A1778":"iPhone 7",
+        "A1779":"iPhone 7",
+        "A1661":"iPhone 7P",
+        "A1784":"iPhone 7P",
+        "A1785":"iPhone 7P",
         "Not Found!": "Not Found!"
     }
 
