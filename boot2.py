@@ -5,6 +5,8 @@ import sys
 __author__ = "Oz"
 __copyright__ = "Apple BOOT2 Parser"
 
+# TODO :
+# https://www.theiphonewiki.com/wiki/Models
 
 model_list = \
     {
@@ -50,9 +52,12 @@ model_list = \
         "A1476": "iPad Air",
         "A1566": "iPad Air 2",
         "A1567": "iPad Air 2",
+        "A1219": "iPad Mini",
         "A1432": "iPad Mini",
         "A1454": "iPad Mini",
         "A1455": "iPad Mini",
+        "MD528": "iPad Mini",
+        "MD531": "iPad Mini",
         "A1489": "iPad Mini 2",
         "A1490": "iPad Mini 2",
         "A1491": "iPad Mini 2",
