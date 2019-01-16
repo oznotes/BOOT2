@@ -104,3 +104,5 @@ venv.bak/
 .mypy_cache/
 boot2.bin
 boot2_half.bin
+CHIP0_BANK0_Block0x1_BOOT2.bin
+.vscode/settings.json
