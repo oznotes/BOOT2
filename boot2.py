@@ -296,6 +296,9 @@ model_list = \
 # 72 6C 43 44
 colors = \
     {
+        """
+        Color Tag inside
+        """
         # iPhone 5C / 32 bit universal ?
         "726c434401000000010000000000000000000000": "White",
         "0002000089f1fa003c3b3b0000000000": "Yellow",
